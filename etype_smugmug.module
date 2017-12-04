@@ -52,7 +52,7 @@ function etype_smugmug_block_view($delta = '') {
   switch ($delta) {
 
     case 'smugmug':
-      $block['subject'] = 'Recent Photos';
+      $block['subject'] = variable_get('etype_smugmug_blocktitle', 'Recent Photos');
       $block['content'] = _etype_smugmug_content();
       break;
     

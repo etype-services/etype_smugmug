@@ -31,6 +31,12 @@ function etype_smugmug_admin_form($form, &$form_state) {
         '#default_value' => variable_get('etype_smugmug_appname'),
     ];
 
+    $form['etype_smugmug_blocktitle'] = [
+        '#title' => t('Smugmug Block Title'),
+        '#type' => 'textfield',
+        '#default_value' => variable_get('etype_smugmug_blocktitle'),
+    ];
+
     return system_settings_form($form);;
 
 }
