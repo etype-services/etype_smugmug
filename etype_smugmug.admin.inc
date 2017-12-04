@@ -31,6 +31,6 @@ function etype_smugmug_admin_form($form, &$form_state) {
         '#default_value' => variable_get('etype_smugmug_appname'),
     ];
 
-    return $form;
+    return system_settings_form($form);;
 
 }
