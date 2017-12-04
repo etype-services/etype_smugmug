@@ -33,5 +33,4 @@ function etype_smugmug_admin_form($form, &$form_state) {
 
     return $form;
 
-
 }
