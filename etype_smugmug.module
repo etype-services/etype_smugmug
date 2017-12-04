@@ -71,8 +71,9 @@ function _etype_smugmug_content() {
         'type' => 'file'
     ));
 
-    $user_name = 'fredericksburgstandard';
-    $api_key = 'SxFKHHZ7q4tPVbjLxkRTbDbcn7pCtBjM';
+    $user_name = variable_get('etype_smugmug_user');
+    $api_key = variable_get('etype_smugmug_apikey');
+    $app_name = variable_get('etype_smugmug_appname');
 
     require_once '/data/web/vendor/autoload.php';
     $output = '<div id="smugmug_div">';
@@ -80,7 +81,7 @@ function _etype_smugmug_content() {
     try {
 
         $options = [
-            'AppName' => 'FredericksburgStandard.com',
+            'AppName' => $app_name,
             '_verbosity' => 1
         ];
 
