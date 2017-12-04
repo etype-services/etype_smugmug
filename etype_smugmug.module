@@ -1,23 +1,54 @@
 <?php
 
 /**
+ * Implements hook_permission().
+ */
+function etype_smugmug_permission() {
+    return [
+        'administer etype smugmug' => [
+            'title' => t('Administer eType SmugMug'),
+        ],
+    ];
+}
+
+/**
+ * @return array
+ */
+function etype_smugmug_menu() {
+
+    $items['admin/config/etype/etype_smugmug'] = [
+        'title' => 'SmugMug Settings',
+        'description' => 'Enter SmugMug settings.',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => ['etype_smugmug_admin_form'],
+        'access arguments' => ['administer etype smugmug'],
+        'file' => 'etype_smugmug.admin.inc',
+        'type' => MENU_NORMAL_ITEM,
+    ];
+
+    return $items;
+}
+
+/**
  * Implements hook_block_info().
  */
 function etype_smugmug_block_info() {
-  $blocks = array();
+  $blocks = [];
 
-  $blocks['smugmug'] = array(
+  $blocks['smugmug'] = [
     'info' => t('SmugMug Photos'),
-  );
+  ];
   
   return $blocks;
 }
 
 /**
+ * @param string $delta
+ * @return array
  * Implements hook_block_view().
  */
 function etype_smugmug_block_view($delta = '') {
-  $block = array();
+  $block = [];
   switch ($delta) {
 
     case 'smugmug':
