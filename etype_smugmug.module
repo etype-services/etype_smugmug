@@ -16,7 +16,7 @@ function etype_smugmug_permission() {
  */
 function etype_smugmug_menu() {
 
-    $items['admin/config/etype/etype_smugmug'] = [
+    $items['admin/config/etype/etype_smugmug/settings'] = [
         'title' => 'SmugMug Settings',
         'description' => 'Enter SmugMug settings.',
         'page callback' => 'drupal_get_form',
