@@ -43,7 +43,7 @@ class Client
      */
     private $default_options = array(
         'base_uri' => 'https://api.smugmug.com/',
-        'api_version' => 'v1',
+        'api_version' => 'v2',
         'query' => [],
         'headers' => [
                         'User-Agent' => 'phpSmug',
