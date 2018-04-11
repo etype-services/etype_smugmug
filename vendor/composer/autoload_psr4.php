@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'phpSmug\\' => array($vendorDir . '/lildude/phpsmug/lib/phpSmug'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'GuzzleHttp\\Subscriber\\Oauth\\' => array($vendorDir . '/guzzlehttp/oauth-subscriber/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),

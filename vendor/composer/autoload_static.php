@@ -19,6 +19,7 @@ class ComposerStaticInitd1f136584525e972120d7bc7985e3e91
         ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
         ),
         'G' => 
@@ -34,6 +35,10 @@ class ComposerStaticInitd1f136584525e972120d7bc7985e3e91
         'phpSmug\\' => 
         array (
             0 => __DIR__ . '/..' . '/lildude/phpsmug/lib/phpSmug',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'Psr\\Http\\Message\\' => 
         array (
