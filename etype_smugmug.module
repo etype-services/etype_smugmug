@@ -75,7 +75,7 @@ function _etype_smugmug_content() {
     $api_key = variable_get('etype_smugmug_apikey');
     $app_name = variable_get('etype_smugmug_appname');
 
-    require_once '/mnt/data/web/vendor/autoload.php';
+    require_once 'vendor/autoload.php';
     $output = '<div id="smugmug_div">';
 
     try {
